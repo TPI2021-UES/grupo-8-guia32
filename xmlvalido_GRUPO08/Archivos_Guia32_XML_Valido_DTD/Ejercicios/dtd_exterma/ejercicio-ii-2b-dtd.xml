@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./ejercicio-ii-2b-dtd.css"?>
+
+<!DOCTYPE fichero SYSTEM "2b.dtd">
+
+
+<fichero>
+<ficha>
+<!--Persona-->
+<persona sexo="masculino">
+<nombre>Juan</nombre>
+<edad>35</edad>
+<familiar nombre="maria buquele" sexo="femenino"/>
+</persona>
+
+<!--Animal-->
+<animal especie="felino"/>
+</ficha>
+</fichero>

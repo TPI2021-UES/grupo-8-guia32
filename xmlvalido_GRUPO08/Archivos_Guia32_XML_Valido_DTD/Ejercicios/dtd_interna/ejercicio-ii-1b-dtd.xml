@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./ejercicio-ii-1b-dtd.css"?>
+
+<!DOCTYPE fichero[
+  <!ELEMENT fichero (ficha+)>
+  <!ELEMENT ficha (persona*,animal*)*>
+  <!ELEMENT persona (nombre,edad,ID?,familiar*)>
+  <!ATTLIST persona sexo (masculino | femenino) #IMPLIED>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT edad (#PCDATA)>
+  <!ELEMENT ID (#PCDATA)>
+  <!ELEMENT familiar EMPTY>
+  <!ATTLIST familiar nombre CDATA #REQUIRED>
+  <!ATTLIST familiar sexo CDATA #REQUIRED>
+  <!ATTLIST familiar edad CDATA #IMPLIED>
+  <!ELEMENT animal EMPTY>
+<!ATTLIST animal especie CDATA #REQUIRED>
+]>
+
+
+<fichero>
+<ficha>
+<!--Persona-->
+<persona sexo="masculino">
+<nombre>Juan</nombre>
+<edad>35</edad>
+<familiar nombre="maria buquele" sexo="femenino"/>
+</persona>
+
+<!--Animal-->
+<animal especie="felino"/>
+</ficha>
+</fichero>

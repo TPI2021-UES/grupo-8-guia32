@@ -1,0 +1,13 @@
+<!ELEMENT fichero (ficha+)>
+<!ELEMENT ficha (persona*,animal*)*>
+<!ELEMENT persona (nombre,edad,ID?,familiar*)>
+<!ATTLIST persona sexo (masculino | femenino) #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT familiar EMPTY>
+<!ATTLIST familiar nombre CDATA #REQUIRED>
+<!ATTLIST familiar sexo CDATA #REQUIRED>
+<!ATTLIST familiar edad CDATA #IMPLIED>
+<!ELEMENT animal EMPTY>
+<!ATTLIST animal especie CDATA #REQUIRED>

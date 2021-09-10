@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+}
+ficha{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 50px;
+    box-shadow: black 5px;
+}
+
+persona{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(90, 78, 64);
+    border-radius: 50px;
+    box-shadow: black 5px;
+}
+
+nombre, edad, familiar{
+    margin: 10px;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+}
+
+nombre::before{
+    content: "Nombre:";
+    color: rgb(138, 138, 138);
+}
+
+edad::before{
+    content: "Edad:";
+    color: rgb(138, 138, 138);
+}
+
+familiar::after{
+    content: "Nombre: " attr(nombre) "Sexo: " attr(sexo);
+    color: Black;
+}
