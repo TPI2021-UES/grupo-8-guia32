@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="estilo1.css"?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libro* )>
+<!ELEMENT libro (autor,titulo,editorial,añoedicion,ubicacion )>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT añoedicion (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>]>
+
+<biblioteca>
+<titulo> Biblioteca</titulo>
+
+<subtitulo> Encuentra el libro que buscas.</subtitulo>
+
+<titulo2>Autor:<autor></autor></titulo2>
+<titulo2>Titulo:<titulo></titulo></titulo2>
+<titulo2>Editorial:<editorial></editorial></titulo2>
+<titulo2>Año de edicion:<añoedicion></añoedicion></titulo2>
+<titulo2>Ubicado en:<ubicacion></ubicacion></titulo2>
+
+<t>Buscar.</t>
+<subtitulo>Vista previa de obras existentes.</subtitulo>
+
+<titulo3>Autor: Ian Smith</titulo3>
+<titulo3>Titulo: Las sombras</titulo3>
+<titulo3>Editorial: Planeta</titulo3>
+<titulo3>Año de edicion: 2013</titulo3>
+<titulo3>Ubicado en: Seccion M</titulo3>
+
+<titulo3>Autor: Liam </titulo3>
+<titulo3>Titulo: Sonidos</titulo3>
+<titulo3>Editorial: Dream</titulo3>
+<titulo3>Año de edicion: 2015</titulo3>
+<titulo3>Ubicado en: Seccion D</titulo3>
+
+<titulo3>Autor: Troy Montalvo </titulo3>
+<titulo3>Titulo: Laguna</titulo3>
+<titulo3>Editorial: Planeta</titulo3>
+<titulo3>Año de edicion: 2010</titulo3>
+<titulo3>Ubicado en: Seccion A</titulo3>
+
+
+
+</biblioteca>
+
+
+
+

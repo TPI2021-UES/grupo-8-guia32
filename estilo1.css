@@ -1,0 +1,43 @@
+biblioteca{
+    background-color:rgb(22, 57, 58);
+}
+titulo{
+    text-align: center;
+    display:block; 
+    color: wheat;
+    font-size: 60px;
+    font-style: oblique;   
+}
+subtitulo{
+    text-align: center;
+    color: wheat;
+    font-size:medium;
+    display: block;
+}
+titulo2{
+    margin-top: bottom ;
+    color: white;
+    margin:auto;
+    font-style: italic;
+    font-size:medium;
+    display: block;
+}
+
+t{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-weight: bolder;
+    display:list-item;
+
+}
+
+titulo3{
+    text-align: center;
+    margin-top: bottom ;
+    color: white;
+    margin:auto;
+    font-style:italic;
+    font-size:medium;
+    display: block;
+}
