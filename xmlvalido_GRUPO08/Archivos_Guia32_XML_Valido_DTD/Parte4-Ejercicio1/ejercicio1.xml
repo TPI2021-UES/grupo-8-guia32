@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="./ejercicio1.css"?>
 <!DOCTYPE libros SYSTEM "ficha_biblioteca.dtd">
-<libros>
+<biblioteca>
+<website>
+    <a xmlns="http://www.w3.org/1999/xhtml" href="../index.html">Regresar</a>
+</website>
     <libro>
         <titulo>Effective Java</titulo>
         <autores>
@@ -15,4 +19,20 @@
         </fecha_publicacion>
         <isbn>9780134686097</isbn>
     </libro>
-</libros>
+
+    <libro>
+        <titulo>Fisica Universitaria</titulo>
+        <autores>
+            <autor>Mark Freeman</autor>
+            <autor>Sears Zemansky</autor>
+        </autores>
+        <editorial>Hugh D. Young</editorial>
+        <fecha_publicacion>
+            <dia>07</dia>
+            <mes>06</mes>
+            <año>2010</año>
+        </fecha_publicacion>
+        <isbn>0250131235097</isbn>
+    </libro>
+    
+</biblioteca>

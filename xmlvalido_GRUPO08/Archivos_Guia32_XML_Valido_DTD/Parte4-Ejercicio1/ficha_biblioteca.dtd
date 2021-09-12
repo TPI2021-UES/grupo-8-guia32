@@ -1,4 +1,4 @@
-<!ELEMENT libros (libro)*>
+<!ELEMENT biblioteca (webside, libro*)>
     <!ELEMENT libro (titulo, autores, editorial, fecha_publicacion, isbn)+>
         <!ELEMENT titulo (#PCDATA)>
         <!ELEMENT autores (autor)+>
@@ -9,3 +9,9 @@
             <!ELEMENT mes (#PCDATA)>
             <!ELEMENT año (#PCDATA)>
         <!ELEMENT isbn (#PCDATA)>
+        <!ELEMENT webside (a)>
+        <!ELEMENT a (#PCDATA)>
+        <!ATTLIST a  
+         href CDATA #IMPLIED
+         xmlns CDATA #IMPLIED 
+         target (_blank|_self|marco) "_self">
