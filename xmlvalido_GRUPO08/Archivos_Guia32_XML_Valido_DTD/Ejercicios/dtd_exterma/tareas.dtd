@@ -1,0 +1,23 @@
+<!--DTD del ejercicio III-->
+<!ELEMENT universidad (facultad)+>
+<!ATTLIST universidad nombre (ues|uca|utec|unam) #FIXED "ues">
+<!ELEMENT facultad (carrera)>
+<!ATTLIST facultad nombre (fia) #REQUIRED>
+<!ELEMENT carrera (asignatura)>
+<!ATTLIST carrera nombre CDATA #IMPLIED>
+<!ELEMENT asignatura (equipo)*>
+<!ATTLIST asignatura nombre CDATA #IMPLIED>
+<!ATTLIST asignatura codigo CDATA #REQUIRED>
+<!ATTLIST asignatura uv CDATA #REQUIRED>
+<!ELEMENT equipo (miembro+, encargado, actividad)>
+<!ATTLIST equipo tipo (discucion|laboratorio|teorico) #FIXED "laboratorio">
+<!ATTLIST equipo numero CDATA #REQUIRED>
+<!ELEMENT miembro EMPTY>
+<!ATTLIST miembro carnet CDATA #REQUIRED>
+<!ATTLIST miembro nombre CDATA #IMPLIED>
+<!ATTLIST miembro coordinador (si|no) "no">
+<!ELEMENT encargado EMPTY>
+<!ATTLIST encargado nombre CDATA #REQUIRED>
+<!ELEMENT actividad EMPTY>
+<!ATTLIST actividad nombre CDATA #REQUIRED>
+<!ATTLIST actividad porcentaje CDATA #REQUIRED>

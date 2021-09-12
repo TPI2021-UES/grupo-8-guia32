@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./tareas.css"?>
+
+<!DOCTYPE universidad SYSTEM "tareas.dtd">
+
+<!--Ejemplo de implementación de la dtd-->
+
+<universidad>
+<facultad nombre="fia">
+<carrera nombre="Ingenieria de Sistemas Informaticos">
+<asignatura nombre="Teoria de Sistemas" codigo="TSI115" uv="4.0">
+<equipo tipo="laboratorio" numero="08">
+<miembro carnet="TJ19017" coordinador="si"/>
+<miembro carnet="CD19018"/>
+<miembro carnet="HZ13025"/>
+<miembro carnet="JL17054"/>
+<encargado nombre="Ing. Pablo Aguirre"/>
+<actividad nombre="Investigacion sobre La teoria del caos" porcentaje="30%"/>
+</equipo>
+</asignatura>
+</carrera>
+</facultad>
+</universidad>
