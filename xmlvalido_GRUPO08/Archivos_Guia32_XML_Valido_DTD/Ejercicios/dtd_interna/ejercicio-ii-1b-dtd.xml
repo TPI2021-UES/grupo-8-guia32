@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/css" href="./ejercicio-ii-1b-dtd.css"?>
 
 <!DOCTYPE fichero[
-  <!ELEMENT fichero (ficha+)>
+  <!ELEMENT fichero (webside, ficha+)>
   <!ELEMENT ficha (persona*,animal*)*>
   <!ELEMENT persona (nombre,edad,ID?,familiar*)>
   <!ATTLIST persona sexo (masculino | femenino) #IMPLIED>
@@ -15,10 +15,19 @@
   <!ATTLIST familiar edad CDATA #IMPLIED>
   <!ELEMENT animal EMPTY>
 <!ATTLIST animal especie CDATA #REQUIRED>
+<!ELEMENT webside (a)>
+<!ELEMENT a (#PCDATA)>
+<!ATTLIST a  
+  href CDATA #IMPLIED
+  xmlns CDATA #IMPLIED 
+  target (_blank|_self|marco) "_self">
 ]>
 
 
 <fichero>
+<website>
+    <a xmlns="http://www.w3.org/1999/xhtml" href="../../index.html">Regresar</a>
+</website>
 <ficha>
 <!--Persona-->
 <persona sexo="masculino">

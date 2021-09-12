@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/css" href="./ejercicio-ii-1a-dtd.css"?>
 
 <!DOCTYPE fichero [
-		<!ELEMENT fichero (ficha+)>
+		<!ELEMENT fichero (webside, ficha+)>
 		<!ELEMENT ficha (nombre, apellido, direccion*, DUI, nacionalidad?)>
 		<!ELEMENT nombre (#PCDATA)>
 		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED >
@@ -12,8 +12,17 @@
 		<!ELEMENT DUI (#PCDATA)>
       <!ELEMENT nacionalidad (#PCDATA)>
       <!ATTLIST nacionalidad idioma CDATA "ingles">
+      <!ELEMENT webside (a)>
+      <!ELEMENT a (#PCDATA)>
+      <!ATTLIST a  
+         href CDATA #IMPLIED
+         xmlns CDATA #IMPLIED 
+         target (_blank|_self|marco) "_self">
 		]>
 <fichero>
+<website>
+    <a xmlns="http://www.w3.org/1999/xhtml" href="../../index.html">Regresar</a>
+</website>
  <ficha>
   <nombre sexo="femenino" edad="17">Angelina</nombre>
   <apellido>Fernandez</apellido>

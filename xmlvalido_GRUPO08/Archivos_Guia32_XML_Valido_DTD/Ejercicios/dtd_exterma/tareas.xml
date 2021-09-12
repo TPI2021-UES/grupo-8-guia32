@@ -6,6 +6,9 @@
 <!--Ejemplo de implementación de la dtd-->
 
 <universidad>
+<website>
+    <a xmlns="http://www.w3.org/1999/xhtml" href="../../index.html">Regresar</a>
+</website>
 <facultad nombre="fia">
 <carrera nombre="Ingenieria de Sistemas Informaticos">
 <asignatura nombre="Teoria de Sistemas" codigo="TSI115" uv="4.0">

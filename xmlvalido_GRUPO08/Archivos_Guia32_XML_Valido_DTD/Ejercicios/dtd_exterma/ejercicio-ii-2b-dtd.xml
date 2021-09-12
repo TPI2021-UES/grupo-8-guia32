@@ -5,6 +5,9 @@
 
 
 <fichero>
+<website>
+    <a xmlns="http://www.w3.org/1999/xhtml" href="../../index.html">Regresar</a>
+</website>
 <ficha>
 <!--Persona-->
 <persona sexo="masculino">
