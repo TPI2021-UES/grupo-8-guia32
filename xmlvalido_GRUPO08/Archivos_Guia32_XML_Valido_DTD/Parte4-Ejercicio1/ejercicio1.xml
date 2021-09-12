@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE libros SYSTEM "ficha_biblioteca.dtd">
+<libros>
+    <libro>
+        <titulo>Effective Java</titulo>
+        <autores>
+            <autor>Joshua Bloch</autor>
+            <autor>Guy L., Jr. Steele</autor>
+        </autores>
+        <editorial>Addison-Wesley Professional</editorial>
+        <fecha_publicacion>
+            <dia>06</dia>
+            <mes>07</mes>
+            <año>2001</año>
+        </fecha_publicacion>
+        <isbn>9780134686097</isbn>
+    </libro>
+</libros>
